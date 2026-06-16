@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prebuild": "node src/scripts/generate-blog.mjs",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@sentry/nextjs": "^9.9.0",
     "@supabase/ssr": "^0.6.1",
     "@supabase/supabase-js": "^2.49.4",
     "@vercel/analytics": "^1.5.0",
@@ -21,7 +21,8 @@
     "react-dom": "^19.2.4",
     "react-icons": "^5.5.0",
     "react-pdf": "^10.1.0",
-    "react-useanimations": "^2.10.0"
+    "react-useanimations": "^2.10.0",
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
